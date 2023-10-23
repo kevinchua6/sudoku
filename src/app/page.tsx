@@ -25,12 +25,13 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div className="flex justify-center items-center flex-col">
+      <h1 className="text-4xl m-5">Sudoku</h1>
       <SudokuBoard
         puzzle={puzzle}
         handleCellChange={handleCellChange}
         initialPuzzle={initialPuzzle}
       />
-    </>
+    </div>
   );
 }
